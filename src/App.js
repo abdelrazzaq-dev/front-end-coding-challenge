@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.scss';
+import { RepositoryProvider } from "./Contexts/RepositoryContext";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World!</h1>
-    </div>
+    <RepositoryProvider>
+      <div className="App">
+        <h1>Hello World!</h1>
+      </div>
+    </RepositoryProvider>
   );
 }
 
