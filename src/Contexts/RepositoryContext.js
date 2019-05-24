@@ -6,7 +6,7 @@ export const RepositoryProvider = (props) => {
     const  [repositories, setRepositories] = useState([]);
 
     return (
-        <RepositoryContext.Provider>
+        <RepositoryContext.Provider value={[repositories, setRepositories]}>
             {props.children}
         </RepositoryContext.Provider>
     )
